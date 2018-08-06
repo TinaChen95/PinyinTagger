@@ -1,5 +1,5 @@
 # PinyinTagger
-A semi-supervised PinyinTagger for Chinese based on Word2vec+KNN
+A semi-supervised PinyinTagger for Chinese based on Word2Vec+KNN
 
 ## 任务简介
 目的：基于一个较小的发音词典(gold standard)，为大量中文词汇(82万个)标注发音
@@ -7,12 +7,12 @@ A semi-supervised PinyinTagger for Chinese based on Word2vec+KNN
 中文多音字的发音，是依赖于其本身的词意的。
 例如，多音字“好”形容有点多时，读hao3；表示喜爱某个事物时，读hao4。
 
-方法：Word2vec + KNN
+方法：Word2Vec + KNN
 * 预训练Word2vec(82万+词汇），用于计算词汇距离
 * 使用KNN，基于邻居投票为候选词进行标注
 
 ## 输入输出
-* 输入： 较小的发音词典(gold standard)
+* 输入： 较小的发音词典(gold standard)  
 * 输出： 82万中文词汇的注音结果
 
 ## 研究对象：
@@ -22,6 +22,7 @@ A semi-supervised PinyinTagger for Chinese based on Word2vec+KNN
 
 ## 模型优缺点：
 优点：依据词意，自动标注
+
 缺点：标注结果很依赖 gold standard 的质量
 
 ## TODO:
